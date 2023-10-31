@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -13,11 +16,6 @@
     color: var(--main-color);
 }
 
-html {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* Header */
 
@@ -25,14 +23,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 105px;
+    height: 79px;
 }
 
 .logo img {
     width: 61px;
     height: 19px;
-    padding: 30px 50px;
+    margin: 30px 50px 30px 0;
 }
 
 ul {
@@ -45,13 +42,12 @@ nav ul {
 
 nav li {
     border-top: solid 2px transparent;
-    padding: 50px 34px;
+    padding: 14px 0 0 0;
 }
 
 nav li:hover {
     border-top: solid 2px var(--main-color);
     cursor: pointer;    
-    padding: 50px 34px;
 }
 
 nav li:hover a {
@@ -64,6 +60,12 @@ nav li:hover a {
     color:black;
 }
 
+.menubuttons {
+    gap: 68px;
+    padding: 0 0 0 50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 /* Fin du header */
 
 body {
@@ -174,6 +176,34 @@ a {
     margin-bottom: 5px;
 }
 
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+    margin-top: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-top: 15px;
+}
+
+footer div {
+    width: auto;
+    height: auto;
+}
+ footer div h4 {
+    font-weight: 700;
+ }
+ footer div a {
+    font-weight: 400;
+ }
+/* Fin du Footer */
 
 
 
