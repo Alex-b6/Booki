@@ -29,7 +29,7 @@ header {
 .logo img {
     width: 61px;
     height: 19px;
-    margin: 30px 50px 30px 0;
+    margin: 30px 50px;
 }
 
 ul {
@@ -62,7 +62,7 @@ nav li:hover a {
 
 .menubuttons {
     gap: 68px;
-    padding: 0 0 0 50px;
+    padding: 0 50px 0 50px;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -71,13 +71,21 @@ nav li:hover a {
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    max-width: 1440px;
+    min-height: 320px;
+    margin: 0;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    margin: 0;
     box-sizing: border-box;
+}
+
+main {
+    margin: 0 3.12rem 0 3.12rem;
 }
 
 a {
@@ -124,6 +132,13 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.directionrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.88rem;
 }
 
 /****** Hebergements ***********/
@@ -179,24 +194,29 @@ a {
 /* Footer */
 
 footer {
-    background-color: #F2F2F2;
-    margin-top: 60px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    background-color: var(--main-bg-color);
+    margin: 0 3.12rem;
+    padding: 1.25rem;
+}
+
+footer .directionrow {
+    justify-content: flex-start;
+}
+
+.navfooter {
+    display:flex;
+    flex-direction:column;
+    justify-self: flex-start !important;
+    gap:0.94rem;
+    width:28rem;
+    align-self: stretch;
 }
 
 footer a {
     text-decoration: none;
     color: black;
-    margin-top: 15px;
 }
 
-footer div {
-    width: auto;
-    height: auto;
-}
  footer div h4 {
     font-weight: 700;
  }
