@@ -173,11 +173,7 @@ main {
     border-radius: 0 15px 15px 0;
 }
 
-.fa-search {
-    display: none;
-}
-
-.button-search {
+button.button-search,.fa-search {
     display: none;
 }
 
