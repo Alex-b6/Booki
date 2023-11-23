@@ -177,6 +177,10 @@ main {
     display: none;
 }
 
+.button-search {
+    display: none;
+}
+
 /* Fin search-bar */
 
 /** Filter-bar **/
