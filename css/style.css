@@ -610,6 +610,9 @@ footer div h4 {
         padding: 0 0 15px 0;
     }
     
+    nav li:hover {
+        border-bottom: solid 2px var(--main-color);   
+    }
 
     /*Fin header */
 
