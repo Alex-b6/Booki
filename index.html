@@ -14,22 +14,16 @@
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
-
 <body> 
-
-        <header>
-            <div class="logo">
-                <img src="images/logo/Booki.png" alt="logo du site booki">
-            </div>
-            <div class="responsivemenu">
-                <nav class="menu">
-                    <ul class="menubuttons">
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header>
+    <header>
+        <img src="images/logo/Booki.png" alt="logo du site booki" class="logo">
+        <nav class="menu responsivemenu">
+            <ul class="menubuttons">
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
+        </nav>    
+    </header>
     <div class="main-container">
         <main>
             <section class="infogroup">
@@ -38,38 +32,22 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="borderSearch flexCenter">
-                    <div class="backgrey flexCenter iconSize">
-                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
-                    </div>
-                    <div>
+                        <i class="fa-solid fa-location-dot backgrey flexCenter iconSize"></i>
                         <input class="search flexCenter borderNone paddingSearch" type="text" name="city" id="city" value="Marseille, France" required>
-                    </div>
-                    <div>
                         <button class="backblue flexCenter buttonSearch borderNone">Rechercher</button>
                         <button class="fa-solid fa-search" id="button-search"></button>
-                    </div>
                 </div>
                 <div class="filterbar">
-                    <div><h3>Filtres</h3></div>
+                    <h3>Filtres</h3>
                     <div class="fbuttonresponsive">
-                        <div>
-                            <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>   
-                        </div>
-                        <div>
-                            <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-child"></i>Familial</button>
-                        </div>
-                        <div>
-                            <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-heart"></i>Romantique</button>
-                        </div>
-                        <div>
-                            <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-fire"></i>Nos pépites</button>
-                        </div>
+                        <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>   
+                        <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-child"></i>Familial</button>
+                        <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-heart"></i>Romantique</button>
+                        <button class="filterbutton filterbuttontxt"><i class="fa-solid fa-fire"></i>Nos pépites</button>
                     </div>
                 </div>
                 <div class="infobar">
-                    <div>
-                        <i class="fa-solid fa-info" style="color: #0065fc;"></i>
-                    </div>
+                    <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
@@ -78,7 +56,6 @@
                     <div class="hosting-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
-                    
                         <div class="directionRow">
                             <div>
                                 <a href="#">
@@ -209,7 +186,6 @@
                                 </a>
                             </div>
                         </div>
-                    
                     <a href="#">
                         <h3 class="section-title">Afficher plus</h3>
                     </a>            

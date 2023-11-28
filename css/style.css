@@ -36,7 +36,7 @@ header {
     margin-bottom: 30px;
 }
 
-.logo img {
+.logo {
     width: 61px;
     height: 19px;
     margin: 30px 50px;
@@ -177,6 +177,10 @@ button.button-search,.fa-search {
     display: none;
 }
 
+.fa-location-dot {
+    color: #000;
+}
+
 /* Fin search-bar */
 
 /** Filter-bar **/
@@ -234,6 +238,7 @@ button.button-search,.fa-search {
 
 .fa-info {
     justify-content: center;
+    color: #0065FC;
 
     width: 24px;
     height: 24px;
@@ -318,7 +323,6 @@ a {
     justify-self: center;
     gap: 30px;
 }
-
 
 .hosting .card-title {
     width: 100%;
@@ -495,13 +499,13 @@ footer div h4 {
     .filterbar,.hosting-and-popular {
         flex-direction: column;
     }
+
     .filterbar {
         justify-content: center;
         align-items: flex-start;
         gap: 20px;
     }
 
-    
     .filterbuttontxt {
         color: var(--Black, #000);
         font-family: Raleway;
@@ -635,7 +639,9 @@ footer div h4 {
     .buttonSearch {
         display: none;
     }
-
+    .borderSearch input {
+        width: 100%;
+    }
     .fa-search {
         justify-content: flex-end;
         align-items: center;
@@ -652,7 +658,7 @@ footer div h4 {
       }
     
       .borderSearch {
-        width: auto;
+        width: 100%;
       }
 
       .search {
@@ -663,8 +669,22 @@ footer div h4 {
 
     /**** Filterbar ****/
 
+    .filterbar {
+        width: 100%;
+    }
+    .fbuttonresponsive {
+        width: 100%;
+    }
+
     .filterbutton {
-        min-width: 154px;
+        width: 47%;
+        height: 50px;
+        padding: 0 10px;
+    }
+
+    .filterbuttontxt {
+        overflow: hidden;
+        white-space: nowrap;
     }
    
     /**** Fin Filterbar ****/
