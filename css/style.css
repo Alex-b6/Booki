@@ -222,7 +222,6 @@ button.button-search,.fa-search {
 }
 
 /** Fin Filter-bar **/
-
 /*** Info-bar ***/
 
 .infobar,.fa-info {
@@ -417,7 +416,6 @@ a {
 }
 
 /****** Fin Populaires ***********/
-
 /****** Activités ************/
 
 .activities {
@@ -453,8 +451,6 @@ a {
 }
 
 /****** Fin Activités ************/
-
-
 /* Footer */
 
 footer {
@@ -490,8 +486,6 @@ footer div h4 {
  }
 
 /* Fin du Footer */
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -671,7 +665,10 @@ footer div h4 {
     /**** Filterbar ****/
     .filterbar {
         width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
+
     .fbuttonresponsive {
         width: 100%;
     }
@@ -679,7 +676,7 @@ footer div h4 {
     .filterbutton {
         width: 47%;
         height: 50px;
-        padding: 0 10px;
+        border-radius: 30px;
     }
 
     .filterbuttontxt {
@@ -716,7 +713,6 @@ footer div h4 {
         border-radius: 0;
     }
     /****** Fin Hebergements And Populaires ***********/
-
     /**** Hébergements ****/
     section.hosting {
         background-color: white;
@@ -735,7 +731,6 @@ footer div h4 {
         flex-direction: column;
     }
     /**** Fin Hébergements ****/
-
     /**** Populaires ****/
     .popular-cards {
         display: flex;
@@ -754,7 +749,6 @@ footer div h4 {
         align-self: stretch;
     }
     /**** Fin Populaires ****/
-
     /***** footer *****/
     footer {
         flex-direction: column;
