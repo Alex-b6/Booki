@@ -318,49 +318,57 @@ a {
 
 .hosting {
     width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    gap: 30px;
 }
 
-.hosting .card-title {
+.host-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.hosting a {
+    width: 30%;
+    display: flex;
+}
+
+.hosting .card {
     width: 100%;
-}
-
-
-.hosting .directionRow div {
-    flex: 1;
-}
-
-.hosting .directionRow .card {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    margin-bottom: 30px;
+}
+.hosting .card img {
+    height: 130px; 
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .hosting .card-content {
-    width: 100%;
-    display: flex;
-    padding: 0 0 0 15px;
-    flex-direction: column;
-    gap: 8px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    flex: 1;
+    padding: 0 5px;
 }
 
-.hosting .card img {
-    width: 100%;
-    height: 124px;
-    border-radius: 20px 20px 0 0;
+.hosting .card-title {
+    margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.hosting .card-content h3{
-   margin: 0 0 8px 0;
+.hosting .card-subtitle {
+    margin-bottom: 4px;
 }
 
 .hosting .card-rating {
-    max-height: 19.2px;
+    margin-bottom: 5px;
 }
+
+.hosting-title {
+    margin-bottom: 30px;
+}
+
 
 /****** Populaires ***********/
 
@@ -564,7 +572,6 @@ footer div h4 {
 
 @media (max-width: 767.98px) {
     /* ... */
-
     /* Header */
 
     header,.responsivemenu {
@@ -619,10 +626,7 @@ footer div h4 {
     }
 
     /*Fin header */
-
-
     /** info group **/
-
     .infogroup {
         display: flex;
         padding: 0px 20px;
@@ -633,9 +637,7 @@ footer div h4 {
     }
     
     /** Fin info group **/
-
     /*** searchbar ***/
-
     .buttonSearch {
         display: none;
     }
@@ -666,9 +668,7 @@ footer div h4 {
       }
 
     /*** fin searchbar ***/
-
     /**** Filterbar ****/
-
     .filterbar {
         width: 100%;
     }
@@ -686,17 +686,13 @@ footer div h4 {
         overflow: hidden;
         white-space: nowrap;
     }
-   
     /**** Fin Filterbar ****/
-
-   
     /***** infobar *****/
-
     .infobar {
         margin-bottom: 0;
     }
-
     /***** Fin infobar *****/
+
     body {
         width: 100%;
     }
@@ -710,7 +706,6 @@ footer div h4 {
     }
 
     /****** Hebergements And Populaires ***********/
-
     .hosting-and-popular {
         display: flex;
         flex-direction: column-reverse;
@@ -723,14 +718,16 @@ footer div h4 {
     /****** Fin Hebergements And Populaires ***********/
 
     /**** Hébergements ****/
+    section.hosting {
+        background-color: white;
+    }
 
-    .hosting {
-        display: flex;
+    .host-cards {
         flex-direction: column;
     }
 
-    section.hosting {
-        background-color: white;
+    .host-cards a {
+        width: 100%;
     }
 
     main .directionRow {
@@ -740,7 +737,6 @@ footer div h4 {
     /**** Fin Hébergements ****/
 
     /**** Populaires ****/
-    
     .popular-cards {
         display: flex;
         flex-direction: column;
@@ -760,7 +756,6 @@ footer div h4 {
     /**** Fin Populaires ****/
 
     /***** footer *****/
-
     footer {
         flex-direction: column;
         padding: 30px;
@@ -779,6 +774,5 @@ footer div h4 {
     footer .navfooter {
         width: 100%;
     }
-
     /***** Fin footer *****/
 }
